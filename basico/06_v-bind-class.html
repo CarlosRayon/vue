@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VUE</title>
+		<script src="assets/js/vue.js"></script>
+
+		<style>
+			.error {
+				color: red;
+			}
+
+			.noError { /* no-error  Vue no admite los guiones en las clases */
+				color: green;
+			}
+		</style>
+    </head>
+
+
+	<body>
+		<a href="index.html">HOME</a>
+		<hr />
+		<h1>v-bind class</h1>
+		<div id="app">
+			<h1 v-bind:class="{ error: propiedadError, noError: !propiedadError }">Esto es un texto</h1>
+		</div>
+		<script src="assets/js/06_v-bind-class.js"></script>
+    </body>
+
+</html>

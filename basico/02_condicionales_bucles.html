@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VUE</title>
+		<script src="assets/js/vue.js"></script>
+	</head>
+	<body>
+		<a href="index.html">HOME</a>
+		<hr />
+		<h1>Condicionales y bucles</h1>
+		<div id="app">
+			<h2>If</h2>
+			<div v-if="isVisible == true">Es visible</div>
+			<div v-else>No es visible</div>
+
+			<hr />
+			<h2>If else</h2>
+
+			<div v-if="value > 5">Es mayor 5</div>
+			<div v-else-if="value == 5">Es igual</div>
+			<div v-else>Value es otra cosa</div>
+
+			<hr />
+			<h2>for</h2>
+			<ul>
+				<li v-for="person in people">{{person}}</li>
+			</ul>
+
+			<hr />
+			<h2>show</h2>
+			<div v-if="isVisible">Texto con if (renderiza o no renderiza segun)</div>
+			<div v-show="isVisible">Texto con show (Simpre renderiza. No eliminada hace desparecer con css (display="none")</div>
+
+		</div>
+		<script src="assets/js/02_condicionales_bucles.js"></script>
+	</body>
+</html>

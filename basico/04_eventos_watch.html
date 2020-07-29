@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VUE</title>
+		<script src="assets/js/vue.js"></script>
+	</head>
+	<body>
+		<a href="index.html">HOME</a>
+		<hr />
+		<h1>Eventos Vue</h1>
+		<div id="app">
+
+            <button @click="incrementar">incrementar</button>
+            <button v-on:click="decrementar">decrementar</button>
+            {{numero}}
+
+            <h1 :style="{color:'blue', fontSize:numero + 'px'}">HOLA MUNDO</h1>
+        </div>
+		<script src="assets/js/04_eventos_watch.js"></script>
+	</body>
+</html>

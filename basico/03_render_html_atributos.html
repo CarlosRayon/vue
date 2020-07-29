@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VUE</title>
+		<script src="assets/js/vue.js"></script>
+	</head>
+	<body>
+		<a href="index.html">HOME</a>
+		<hr />
+		<h1>Render html y atributos</h1>
+		<div id="app">
+			<h2>render html</h2>
+			{{content_html}}
+			<div v-html="content_html"></div>
+
+			<h2>Render src y atributos (dos opciones)</h2>
+			<img v-bind:src="src" v-bind:alt="alt" v-bind:title="title"/>
+			<img :src="src" :alt="alt" :title="title" />
+		</div>
+		<script src="assets/js/03_render_html_atributos.js"></script>
+	</body>
+</html>
